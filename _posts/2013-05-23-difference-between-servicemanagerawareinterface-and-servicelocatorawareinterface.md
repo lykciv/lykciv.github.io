@@ -7,11 +7,11 @@ tags: [zf2, service manager]
 ---
 {% include JB/setup %}
 
-`ServiceManagerAwareInterface` is deprecated, you should use `ServiceLocatorAwareInterface`.
+The `ServiceManagerAwareInterface` is a specific implementation of a service locator. It is currently considered deprecated, so should not be used.
 
-There is also a `ServiceLocatorAwareTrait` available.
+Instead, you should use `\Zend\ServiceManager\ServiceLocatorAwareInterface` to make your classes service aware. And Zend also provides a  `\Zend\ServiceManager\ServiceLocatorAwareTrait` which you can use.
 
-Info source: 
+**More information:** 
 
 - [http://zend-fr
 amework-community.634137.n4.nabble.com/ServiceManagerAwareInterface-vs-ServiceLocatorAwareInterface-td4655675.html](http://zend-fr
